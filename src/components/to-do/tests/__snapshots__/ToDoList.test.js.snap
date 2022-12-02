@@ -21,6 +21,7 @@ exports[`ToDoList component test ToDoList component should match snapshot 1`] = 
       className="to-do--list-inner-item-two"
     >
       <button
+        className="button"
         data-testid="list-todo-edit-btn"
         onClick={[Function]}
       >
@@ -32,6 +33,7 @@ exports[`ToDoList component test ToDoList component should match snapshot 1`] = 
       className="to-do--list-inner-item-three"
     >
       <button
+        className="button"
         data-testid="list-todo-delete-btn"
         onClick={[Function]}
       >

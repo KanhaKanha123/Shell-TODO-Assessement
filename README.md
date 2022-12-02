@@ -25,4 +25,5 @@ Builds the app for production to the `build` folder.\
 3.Acessiblity added by aria-labels.\
 4.Unit testing added.\
 5.All the features added.\
-5.By default screen is empty because there is no TODO list. When user will click on Add TODO button on header then text will appear to add TODO.
+6.By default screen is empty because there is no TODO list. When user will click on Add TODO button on header then text will appear to add TODO.\
+7.when you will click on edit, the value will display in text box and click save will update the value.
