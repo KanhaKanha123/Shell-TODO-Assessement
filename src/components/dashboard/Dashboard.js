@@ -20,17 +20,19 @@ const Dashboard = () => {
 
     //Save TODO
     const saveToDo = () => {
-        if (refEditState.current) {
-            const updatedToList = listToDo.map((item) => (item.id === parseInt(refEditState.current)) ? { ...item, value: toDoObj.value } : item);
-            setlistToDo([...updatedToList]);
-            refEditState.current = null;
-        } else {
-            setlistToDo(prevState => [...prevState, toDoObj]);
-            idRef.current = idRef.current + 1;
-        }
+        if (toDoObj.value !== '') {
+            if (refEditState.current) {
+                const updatedToList = listToDo.map((item) => (item.id === parseInt(refEditState.current)) ? { ...item, value: toDoObj.value } : item);
+                setlistToDo([...updatedToList]);
+                refEditState.current = null;
+            } else {
+                setlistToDo(prevState => [...prevState, toDoObj]);
+                idRef.current = idRef.current + 1;
+            }
 
-        //clear textbox value after save the list
-        setToDoValue({ id: 0, value: '' });
+            //clear textbox value after save the list
+            setToDoValue({ id: 0, value: '' });
+        }
     }
 
     //Edit TODO

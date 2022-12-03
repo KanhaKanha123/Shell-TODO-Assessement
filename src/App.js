@@ -1,12 +1,15 @@
 import './App.css';
-import Dashboard from './components/dashboard/Dashboard';
 import Header from './components/header/Header';
+import Routing from './routing/Routing';
+import ErrorBoundary from './error-boundries/ErrorBoundry';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Dashboard></Dashboard>
+      <ErrorBoundary>
+        <Header />
+      </ErrorBoundary>
+      <Routing></Routing>
     </div>
   );
 }
