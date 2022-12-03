@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Dashboard from '../Dashboard';
 import renderer from 'react-test-renderer';
-import Context from '../../../Context';
+import Context from '../../../store/Context';
 
 describe('Dashboard component test', () => {
 

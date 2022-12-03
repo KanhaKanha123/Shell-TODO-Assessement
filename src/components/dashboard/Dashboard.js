@@ -1,6 +1,6 @@
 import { Fragment, useState, useRef } from "react";
 import ToDoList from '../to-do/ToDoList';
-import { TODOAppState } from '../../Context';
+import { TODOAppState } from '../../store/Context';
 import AddToDo from '../to-do/AddToDo';
 
 const Dashboard = () => {

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import AddToDo from '../AddToDo';
 import renderer from 'react-test-renderer';
-import Context from '../../../Context';
+import Context from '../../../store/Context';
 
 describe('AddToDo component test', () => {
     const mockFn = jest.fn();
